@@ -38,17 +38,17 @@ variable "subnet_c_cidr" {
     default = "172.31.16.0/20"
 }
 
-variable "mysql_name" {
+variable "rds_name" {
     type        = string
     default     = "wordpress"
 }
-variable "mysql_username" {
+variable "rds_username" {
     type        = string
     default     = "user"
     sensitive   = true
 }
 
-variable "mysql_password" {
+variable "rds_password" {
     type        = string
     default     = "12345678"
     sensitive   = true 
